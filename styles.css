@@ -79,9 +79,6 @@ p{
   color: gray
 }
 
-.hide{
-  display: none;
-}
 
 /* home */
 #home-container{
@@ -214,11 +211,10 @@ p{
 }
 
 .experience-container{
-  display: flex;
+  position: relative;
   text-align: left;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .experience-container h2, .experience-container h3{
@@ -231,6 +227,25 @@ p{
 .experience-container li{
   line-height: 30px;
 }
+
+
+#professional-section, #academic-section{
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0.2s; 
+  transition: opacity 0.2s ease;
+} 
+
+#professional-section.hidden, #academic-section.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+} 
+
 
 /*skills*/
 
