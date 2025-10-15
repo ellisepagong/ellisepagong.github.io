@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gilda+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-  --dark-blue: #050024;
+  --background: #06001a;
+  --dark-blue: #070033;
   --dark-blue-2: rgba(5, 0, 36, 0.7);
   --white: #fff;
   --gold: #ffe662;
@@ -15,8 +16,8 @@ html{
 }
 
 body{
-    /* background-color: var(--dark-blue); */
-  background: url("images/pawel-czerwinski-1.jpg") fixed;
+    background-color: var(--background);
+  /* background: url("images/pawel-czerwinski-1.jpg") fixed; */
   background-size: cover;
   text-align: center;
   color: var(--white);
@@ -43,7 +44,8 @@ button.active{
   transition-duration: 0.5s;
 }
 .navbar{
-  background: url("images/pawel-czerwinski-1.jpg") fixed;
+  /* background: url("images/pawel-czerwinski-1.jpg") fixed; */
+  background-color: var(--background);
   background-size: cover;
   display: grid;
  grid-template-columns: 120px 120px 120px 120px 120px;
