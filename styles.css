@@ -9,15 +9,14 @@
   --body-font: "Gilda Display", serif;
   --accent-font: "Work Sans", sans-serif;
 }
+
 /* global */
 
 html{
   scroll-behavior: smooth;
 }
-
 body{
     background-color: var(--background);
-  /* background: url("images/pawel-czerwinski-1.jpg") fixed; */
   background-size: cover;
   text-align: center;
   color: var(--white);
@@ -38,15 +37,13 @@ button:hover{
   color: var(--gold);
   transition-duration: 1s;
 }
-button.active{
+.active{
   color: var(--gold);
   text-decoration: underline;
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
 }
 .navbar{
-  /* background: url("images/pawel-czerwinski-1.jpg") fixed; */
-  background-color: var(--background);
-  background-size: cover;
+
   display: grid;
  grid-template-columns: 120px 120px 120px 120px 120px;
   height: 8vh;
@@ -76,7 +73,6 @@ p{
  font-size: 12px;
  color: gray
 }
-
 .attribution a{
   color: gray
 }
@@ -98,9 +94,8 @@ p{
   stroke-width: 3px;
   padding: 0 5px;
 }
-
 #download-cv{
-  border: 1px solid white;
+  border: 1px solid var(--gold);
   width: 210px;
   height: 50px;
   margin-top: 10px;
@@ -109,6 +104,8 @@ p{
   display: flex;
     align-items: center;
   justify-content: center;
+  color: white;
+
 }
 #contacts svg{
   stroke-width: 1.5px;
@@ -116,11 +113,11 @@ p{
   transition-duration: 1s;
 }
 #download-cv:hover{
-  border: 1px solid var(--gold);
+  border: 1px solid white;
   transition-duration: 1s;
 }
 #download-cv:hover svg{
-  stroke: var(--gold);
+  stroke: white;
   transition-duration: 1s;
   translate: 0 3px;
 }
@@ -186,19 +183,23 @@ p{
   width: 260px;
   height: 30px;
   margin: 30px;
-  border: 1px solid white;
-  color: white;
   font-family: var(--accent-font);
   font-size: 16px;
-}
-.project-card button:hover{
   background-color: white;
   color: var(--dark-blue);
 }
-
-.project-card button:hover path{
+.project-card button:hover{
+  border: 1px solid white;
+  background-color: var(--background-color);
+  color: white;
+}
+.project-card button path{
   stroke: var(--dark-blue);
   fill: var(--dark-blue);
+}
+.project-card button:hover path{
+  stroke: white;
+  fill: white;
 }
 
 /*experience*/
@@ -211,33 +212,27 @@ p{
   align-items: center;
   justify-content: center;
 }
-
 .experience-container{
   position: relative;
   text-align: left;
   align-items: center;
   justify-content: center;
 }
-
 .experience-container h2, .experience-container h3{
   margin: 5px
 }
-
 .experience-container p{
   text-indent: 1em; 
 }
 .experience-container li{
   line-height: 30px;
 }
-
-
 #professional-section, #academic-section{
   opacity: 1;
   pointer-events: auto;
   transition-delay: 0.2s; 
   transition: opacity 0.2s ease;
 } 
-
 #professional-section.hidden, #academic-section.hidden {
   position: absolute;
   top: 0;
@@ -260,7 +255,6 @@ p{
   align-items: center;
   justify-content: center;
 }
-
 .skill-class{
   background-color: var(--dark-blue);
   width: 300px;
@@ -272,7 +266,6 @@ p{
   align-items: center;
   justify-content: center;
 }
-
 .skill-class div{
   font-family: var(--header-font);
   display: flex;
@@ -287,7 +280,6 @@ p{
   align-items: center;
   justify-content: center;
 }
-
 .skill-class span{
   border: 1px solid var(--gold);
   border-radius: 15px;
@@ -303,14 +295,12 @@ p{
   background-color: var(--dark-blue-2);
   padding:5% 10%;
 }
-
 #about-view svg{
   stroke: var(--gold);
   stroke-width: 3px;
   padding: 0 5px;
   text-align: center;
 }
-
 #about-view p{
   text-indent: 3em;
   text-align: justify;
