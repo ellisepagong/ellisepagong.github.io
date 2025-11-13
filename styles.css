@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gilda+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-  --background: #06001a;
-  --dark-blue: #070033;
-  --dark-blue-2: rgba(5, 0, 36, 0.7);
+  --background: #060020;
+  --dark-blue: #040022;
+  --dark-blue-2: #06002080;
+  --stars: hsl(56, 100%, 88%);
   --white: #fff;
   --gold: #ffe662;
   --header-font: "EB Garamond", serif;
@@ -16,7 +17,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    background-color: var(--background);
+  background-color: var(--background);
   background-size: cover;
   text-align: center;
   color: var(--white);
@@ -45,7 +46,7 @@ button:hover{
 .navbar{
 
   display: grid;
- grid-template-columns: 120px 120px 120px 120px 120px;
+  grid-template-columns: 120px 120px 120px 120px 120px;
   height: 8vh;
   align-items: center;
   justify-content: center;
@@ -102,7 +103,7 @@ p{
   background-color: var(--dark-blue);
   transition-duration: 1s;
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
   color: white;
 
@@ -135,6 +136,21 @@ p{
   margin: 50px 20px 0 20px;
   background-color: var(--dark-blue);
   min-height: 400px;
+    
+ 
+    box-shadow: 
+        inset 0 0 35px rgba(255, 217, 0, 0.152),     /* Gold inner glow */
+        inset 2px 2px 50px rgba(0, 0, 0, 0.638),       /* Depth shadow */
+        inset -2px -2px 6px rgba(255, 255, 255, 0.15), /* Highlight edge */
+        0 8px 28px rgba(0, 0, 0, 0.526),             /* Outer separation */
+        0 0 15px rgba(255, 217, 0, 0.301);            /* Subtle gold aura */
+    
+    
+
+    background-size: cover;
+    background-clip: padding-box;
+    
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card h2{
   margin-top: 30px; 
@@ -305,4 +321,16 @@ p{
   text-indent: 3em;
   text-align: justify;
   margin: 20px 50px;
+}
+
+/* background animation */
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
 }
