@@ -8,292 +8,301 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="container" cla></canvas>
-    <div class="navbar">
-        <button>home</button>
-        <button>projects</button>
-        <button>experience</button>
-        <button>skills</button>
-        <button>about me</button>
+    <div id = "mobile-modal">
+        <div>
+            <p>This site is best viewed on desktop.<br>A mobile layout is coming soon!</p>
+            <svg id = "phone-svg" width="20vw" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9436 1.25H12.0564C13.8942 1.24998 15.3498 1.24997 16.489 1.40314C17.6614 1.56076 18.6104 1.89288 19.3588 2.64124C20.1071 3.38961 20.4392 4.33856 20.5969 5.51098C20.75 6.65019 20.75 8.10583 20.75 9.94359V14.0564C20.75 15.8942 20.75 17.3498 20.5969 18.489C20.4392 19.6614 20.1071 20.6104 19.3588 21.3588C18.6104 22.1071 17.6614 22.4392 16.489 22.5969C15.3498 22.75 13.8942 22.75 12.0564 22.75H11.9436C10.1058 22.75 8.65019 22.75 7.51098 22.5969C6.33856 22.4392 5.38961 22.1071 4.64124 21.3588C3.89288 20.6104 3.56076 19.6614 3.40314 18.489C3.24997 17.3498 3.24998 15.8942 3.25 14.0564V9.94358C3.24998 8.10582 3.24997 6.65019 3.40314 5.51098C3.56076 4.33856 3.89288 3.38961 4.64124 2.64124C5.38961 1.89288 6.33856 1.56076 7.51098 1.40314C8.65019 1.24997 10.1058 1.24998 11.9436 1.25ZM7.71085 2.88976C6.70476 3.02502 6.12511 3.27869 5.7019 3.7019C5.27869 4.12511 5.02502 4.70476 4.88976 5.71085C4.75159 6.73851 4.75 8.09318 4.75 10V14C4.75 15.9068 4.75159 17.2615 4.88976 18.2892C5.02502 19.2952 5.27869 19.8749 5.7019 20.2981C6.12511 20.7213 6.70476 20.975 7.71085 21.1102C8.73851 21.2484 10.0932 21.25 12 21.25C13.9068 21.25 15.2615 21.2484 16.2892 21.1102C17.2952 20.975 17.8749 20.7213 18.2981 20.2981C18.7213 19.8749 18.975 19.2952 19.1102 18.2892C19.2484 17.2615 19.25 15.9068 19.25 14V10C19.25 8.09318 19.2484 6.73851 19.1102 5.71085C18.975 4.70476 18.7213 4.12511 18.2981 3.7019C17.8749 3.27869 17.2952 3.02502 16.2892 2.88976C15.2615 2.75159 13.9068 2.75 12 2.75C10.0932 2.75 8.73851 2.75159 7.71085 2.88976ZM8.25 19C8.25 18.5858 8.58579 18.25 9 18.25H15C15.4142 18.25 15.75 18.5858 15.75 19C15.75 19.4142 15.4142 19.75 15 19.75H9C8.58579 19.75 8.25 19.4142 8.25 19Z" fill="#fff"></path> </g></svg>    
+            <p class="typewriter"></p>
+        </div>
     </div>
-    <div class="section" id="home-view">
-        <h3 style="margin-top:200px;"><i>I make things in code. In real life too.</i></h3>
-        <h1 style="font-size:32px; margin: 50px 0 0;">Johanne Ellise R. Pag-ong</h1>
-        <h3 style="margin:0;">Computer Engineer</h3>
-        <svg height="3" width="100" style="padding: 10px 10px;">
-                <line x1="0" y1="0" x2="100" y2="0" />
-            </svg>
-        <div id="home-container">
-            <div id="contacts">
-                <a href="mailto:ellise.pagong@gmail.com" style = "margin: 10px; text-decoration: none;  font-style: italic; color: white">
-                        ellise.pagong@gmail.com
-                </a>
-                <a href = "images\Pag-ong.pdf" target="_blank">
-                    <button id="download-cv">
-                    <svg width="30px" height="30px"  xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5535 16.5061C12.4114 16.6615 12.2106 16.75 12 16.75C11.7894 16.75 11.5886 16.6615 11.4465 16.5061L7.44648 12.1311C7.16698 11.8254 7.18822 11.351 7.49392 11.0715C7.79963 10.792 8.27402 10.8132 8.55352 11.1189L11.25 14.0682V3C11.25 2.58579 11.5858 2.25 12 2.25C12.4142 2.25 12.75 2.58579 12.75 3V14.0682L15.4465 11.1189C15.726 10.8132 16.2004 10.792 16.5061 11.0715C16.8118 11.351 16.833 11.8254 16.5535 12.1311L12.5535 16.5061Z" />
-                        <path d="M3.75 15C3.75 14.5858 3.41422 14.25 3 14.25C2.58579 14.25 2.25 14.5858 2.25 15V15.0549C2.24998 16.4225 2.24996 17.5248 2.36652 18.3918C2.48754 19.2919 2.74643 20.0497 3.34835 20.6516C3.95027 21.2536 4.70814 21.5125 5.60825 21.6335C6.47522 21.75 7.57754 21.75 8.94513 21.75H15.0549C16.4225 21.75 17.5248 21.75 18.3918 21.6335C19.2919 21.5125 20.0497 21.2536 20.6517 20.6516C21.2536 20.0497 21.5125 19.2919 21.6335 18.3918C21.75 17.5248 21.75 16.4225 21.75 15.0549V15C21.75 14.5858 21.4142 14.25 21 14.25C20.5858 14.25 20.25 14.5858 20.25 15C20.25 16.4354 20.2484 17.4365 20.1469 18.1919C20.0482 18.9257 19.8678 19.3142 19.591 19.591C19.3142 19.8678 18.9257 20.0482 18.1919 20.1469C17.4365 20.2484 16.4354 20.25 15 20.25H9C7.56459 20.25 6.56347 20.2484 5.80812 20.1469C5.07435 20.0482 4.68577 19.8678 4.40901 19.591C4.13225 19.3142 3.9518 18.9257 3.85315 18.1919C3.75159 17.4365 3.75 16.4354 3.75 15Z"/>
-                    </svg>
-                    CV (Sept 2025)
+    <div id = "main-content" class = "hidden">
+        <canvas id="container" cla></canvas>
+        <div class="navbar">
+            <button>home</button>
+            <button>projects</button>
+            <button>experience</button>
+            <button>skills</button>
+            <button>about me</button>
+        </div>
+        <div class="section" id="home-view">
+            <h3 style="margin-top:200px;"><i>I make things in code. In real life too.</i></h3>
+            <h1 style="font-size:32px; margin: 50px 0 0;">Johanne Ellise R. Pag-ong</h1>
+            <h3 style="margin:0;">Computer Engineer</h3>
+            <svg height="3" width="100" style="padding: 10px 10px;">
+                    <line x1="0" y1="0" x2="100" y2="0" />
+                </svg>
+            <div id="home-container">
+                <div id="contacts">
+                    <a href="mailto:ellise.pagong@gmail.com" style = "margin: 10px; text-decoration: none;  font-style: italic; color: white">
+                            ellise.pagong@gmail.com
+                    </a>
+                    <a href = "images\Pag-ong.pdf" target="_blank">
+                        <button id="download-cv">
+                        <svg width="30px" height="30px"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5535 16.5061C12.4114 16.6615 12.2106 16.75 12 16.75C11.7894 16.75 11.5886 16.6615 11.4465 16.5061L7.44648 12.1311C7.16698 11.8254 7.18822 11.351 7.49392 11.0715C7.79963 10.792 8.27402 10.8132 8.55352 11.1189L11.25 14.0682V3C11.25 2.58579 11.5858 2.25 12 2.25C12.4142 2.25 12.75 2.58579 12.75 3V14.0682L15.4465 11.1189C15.726 10.8132 16.2004 10.792 16.5061 11.0715C16.8118 11.351 16.833 11.8254 16.5535 12.1311L12.5535 16.5061Z" />
+                            <path d="M3.75 15C3.75 14.5858 3.41422 14.25 3 14.25C2.58579 14.25 2.25 14.5858 2.25 15V15.0549C2.24998 16.4225 2.24996 17.5248 2.36652 18.3918C2.48754 19.2919 2.74643 20.0497 3.34835 20.6516C3.95027 21.2536 4.70814 21.5125 5.60825 21.6335C6.47522 21.75 7.57754 21.75 8.94513 21.75H15.0549C16.4225 21.75 17.5248 21.75 18.3918 21.6335C19.2919 21.5125 20.0497 21.2536 20.6517 20.6516C21.2536 20.0497 21.5125 19.2919 21.6335 18.3918C21.75 17.5248 21.75 16.4225 21.75 15.0549V15C21.75 14.5858 21.4142 14.25 21 14.25C20.5858 14.25 20.25 14.5858 20.25 15C20.25 16.4354 20.2484 17.4365 20.1469 18.1919C20.0482 18.9257 19.8678 19.3142 19.591 19.591C19.3142 19.8678 18.9257 20.0482 18.1919 20.1469C17.4365 20.2484 16.4354 20.25 15 20.25H9C7.56459 20.25 6.56347 20.2484 5.80812 20.1469C5.07435 20.0482 4.68577 19.8678 4.40901 19.591C4.13225 19.3142 3.9518 18.9257 3.85315 18.1919C3.75159 17.4365 3.75 16.4354 3.75 15Z"/>
+                        </svg>
+                        CV (Sept 2025)
+                        </button>
+                    </a>
+                    <div style="margin-top: 10px;">
+                        <a href="https://github.com/ellisepagong" target="_blank">
+                            <svg width="30" height="30" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
+                                </g></g></g>
+                            </svg>                
+                        </a>        
+                        <a href="https://www.linkedin.com/in/ellise-pag-ong-75aa78250" target="_blank">
+                            <svg width="30" height="30" fill="#fff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd125aef"> 
+                                <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M116.504,500.219V170.654H6.975v329.564H116.504 L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941 C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219 c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533 c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531 c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z"> </path> </g> </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="projects-view">
+            <div class="project-card">
+                <h2><br>Cucumber Automation Suite</h2>
+                <svg height="5" width="75">
+                    <line x1="0" y1="0" x2="75" y2="0"/></svg>
+                <h3>Personal Project | Completed</h3>
+                <div class = "tech-stack">
+                    <span>Selenium</span>
+                    <span>Cucumber</span>
+                    <span>JUnit 4</span>
+                    <span class="none"></span>
+                    <span>Github Actions</span>
+                    <span class="none"></span>
+                </div>
+                <p>A collection of automated tests for the SauceDemo test site using Selenium and Cucumber. Includes Javadocs</p>
+                <a href="https://github.com/ellisepagong/saucedemo-automation">
+                    <button>
+                        <svg width="15" height="15" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
+                                </g></g></g>
+                            </svg>  
+                        GitHub
                     </button>
                 </a>
-                <div style="margin-top: 10px;">
-                    <a href="https://github.com/ellisepagong" target="_blank">
-                        <svg width="30" height="30" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
-                            </g></g></g>
-                        </svg>                
-                    </a>        
-                    <a href="https://www.linkedin.com/in/ellise-pag-ong-75aa78250" target="_blank">
-                        <svg width="30" height="30" fill="#fff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd125aef"> 
-                            <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M116.504,500.219V170.654H6.975v329.564H116.504 L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941 C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219 c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533 c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531 c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z"> </path> </g> </g>
-                        </svg>
-                    </a>
+            </div>
+            <div class="project-card">
+                <h2><br>Template Calendar</h2>
+                <svg height="5" width="75">
+                    <line x1="0" y1="0" x2="75" y2="0"/></svg>
+                <h3>Personal Project | Ongoing</h3>
+                <div class = "tech-stack">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Hibernate</span>
+                    <span>HTML/CSS</span>
+                    <span>ES6</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <p>Long-term project to learn full-stack development. A calendar web application with saved task lists for flexibility of time management.</p>
+                <a href="https://github.com/ellisepagong/TemplateCalendar">
+                    <button>
+                        <svg width="15" height="15" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
+                                </g></g></g>
+                            </svg>  
+                        GitHub
+                    </button>
+                </a>
+            </div>
+            <div class="project-card">
+                <h2>Computer Vision<br>Equipped Vest</h2>
+                <svg height="5" width="75">
+                    <line x1="0" y1="0" x2="75" y2="0"/></svg>
+                <h3>University Thesis</h3>
+                <div class = "tech-stack">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>PyTorch</span>
+                    <span>DepthAI</span>
+                    <span>Arduino</span>
+                </div>
+                <p>A vest eqipped with an object detection model for the visually impaired. Contributed to the training of the model and microcontroller programming.</p>
+                <a href="https://github.com/ellisepagong/DSP-1-2324-C7-ObstacleDetection">
+                    <button>
+                        <svg width="15" height="15" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
+                                </g></g></g>
+                            </svg>  
+                        GitHub
+                    </button>
+                </a>
+            </div>
+            <div class="project-card">
+                <h2>Companion Mobile<br>Applcation for CV Thesis</h2>
+                <svg height="5" width="75">
+                    <line x1="0" y1="0" x2="75" y2="0"/></svg>
+                <h3>University Thesis</h3>
+                <div class = "tech-stack">
+                    <span>Java</span>
+                    <span>Kotlin</span>
+                    <span>Jetpack Compose</span>
+                </div>
+                <p>My individual contribution to my group thesis. Developed an android application to communicate with the vest to provide alerts to the user.</p>
+                <a href="https://github.com/ellisepagong/DSP-1-2324-C7-MobileApp">
+                    <button>
+                        <svg width="15" height="15" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
+                                </g></g></g>
+                            </svg>  
+                        GitHub
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="section" id="experience-view">
+            <div>
+                <div style="display: grid; grid-template-columns: 130px 130px; align-items: center; justify-content: center; margin-left:10px;">
+                    <button id = "professional-button" class="active">Professional</button>
+                    <button id = "academic-button">Academic</button>
+                </div>
+                <svg height="5" width="150" style="margin:10px 0 30px 0">
+                    <line x1="0" y1="0" x2="200" y2="0"/>
+                </svg>
+                <div class="experience-container">
+                    <div id="professional-section">
+                        <h2>Voluntary Data Encoder</h2>
+                        <h3><i>Independent Auditor</i> | 2016-Present</h3>
+                        <ul>
+                            <li>Accepted ad-hoc assignments recording and balancing client expenses and income for financial audit and BIR compliance.</li>
+                            <li>Encoded client transactions into accounting software or digitized from physical ledgers, consolidating data into standardized reports.</li>
+                            <li>Coordinated with representatives of long-term clients to establish project and fund accounts, as well as income and expense details.</li>
+                            <li>Optimized workflows to complete one month’s worth of client income and expense data entry and balancing within 2 days.</li>
+                        </ul>
+                        <h2>Software QA Intern</h2>
+                        <h3><i>Asurion Philippines</i> | May-Aug 2024</h3>
+                        <ul>
+                            <li>Scripted automated test cases using Selenium, Cucumber for a customer-facing web application, deployed into the CI/CD pipeline with GitHub Actions.</li>
+                            <li>Performed manual and automated end-to-end tests across 12 client merchants, validating UI behavior, backend databases, and JSON API responses.</li>
+                            <li>Adapted quickly to technical challenges: updated Selenium locators for encrypted iframe fields, implemented JavaScript execution in Selenium, and troubleshot access limitations by querying SQL databases directly.</li>
+                            <li>Reported and tracked issues in Jira, collaborating with developers to verify fixes.</li>
+                            <li>Earned positive performance feedback for independence, resourcefulness, and technical skills.</li>
+                        </ul>
+                    </div>
+                    <div id="academic-section" >
+                        <h2>BS Computer Engineering</h2>
+                        <h3>De La Salle University - Manila | June 2025</h3>
+                        <p>Association of Computer Engineering Students - AVP Creatives | 2019-2021</p>
+                        <ul>
+                            <li>Founded Laguna chapter, creating a hub for students in the satellite campus.</li>
+                            <li>Designed promotional materials for events and social media campaigns.</li>
+                        </ul> 
+                    
+                        <p>DLSU Commission on Elections - Laguna Campus Representative | 2019-2020</p>
+                        <ul>
+                            <li>Facilitated student council elections at the Laguna campus.</li>
+                            <li>Coordinated with main branch for candidate compliance, event logistics, and organization.</li>
+                        </ul> 
+                        <h2>Science, Technology, Engineering and Mathematics Strand</h2>
+                        <h3>Miriam College - Loyola Heights | April 2018</h3>
+                        <p>Varsity Tennis Team | 2017 - 2018</p>
+                            <ul>
+                                <li>Led campaign to establish a tennis club and formed a competitive team for local tournaments.</li>
+                                <li>League of Southern Manila Schools 2016 - Silver Medal.</li>
+                            </ul> 
+                
+                        <p>Computer Club - Secretary | 2016-2017</p>
+                            <ul>
+                                <li>Managed attendance records, organized paperwork, and supported board operations.</li>
+                                <li>Represented the school in Google Web Rangers Program in 2016, reaching top 5 with an online digital literacy campaign.</li>
+                            </ul> 
+                            
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section" id="projects-view">
-        <div class="project-card">
-            <h2><br>Cucumber Automation Suite</h2>
-            <svg height="5" width="75">
-                <line x1="0" y1="0" x2="75" y2="0"/></svg>
-            <h3>Personal Project | Completed</h3>
-            <div class = "tech-stack">
-                <span>Selenium</span>
-                <span>Cucumber</span>
-                <span>JUnit 4</span>
-                <span class="none"></span>
-                <span>Github Actions</span>
-                <span class="none"></span>
-            </div>
-            <p>A collection of automated tests for the SauceDemo test site using Selenium and Cucumber. Includes Javadocs</p>
-            <a href="https://github.com/ellisepagong/saucedemo-automation">
-                <button>
-                    <svg width="15" height="15" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
-                            </g></g></g>
-                        </svg>  
-                    GitHub
-                </button>
-            </a>
-        </div>
-        <div class="project-card">
-            <h2><br>Template Calendar</h2>
-            <svg height="5" width="75">
-                <line x1="0" y1="0" x2="75" y2="0"/></svg>
-            <h3>Personal Project | Ongoing</h3>
-            <div class = "tech-stack">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>Hibernate</span>
-                <span>HTML/CSS</span>
-                <span>ES6</span>
-                <span>PostgreSQL</span>
-            </div>
-            <p>Long-term project to learn full-stack development. A calendar web application with saved task lists for flexibility of time management.</p>
-            <a href="https://github.com/ellisepagong/TemplateCalendar">
-                <button>
-                    <svg width="15" height="15" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
-                            </g></g></g>
-                        </svg>  
-                    GitHub
-                </button>
-            </a>
-        </div>
-        <div class="project-card">
-            <h2>Computer Vision<br>Equipped Vest</h2>
-            <svg height="5" width="75">
-                <line x1="0" y1="0" x2="75" y2="0"/></svg>
-            <h3>University Thesis</h3>
-            <div class = "tech-stack">
+        <div class="section" id="skills-view">
+            <div class="skill-class">
+                <div>Programming Languages</div>
                 <span>Python</span>
+                <span>Java</span>
+                <span>C++</span>
+                <span>SQL</span>
+            </div>
+            <div class="skill-class">
+                <div>Quality Assurance</div> 
+                <span>JUnit</span>
+                <span>Selenium</span>
+                <span>Cucumber</span>       
+            </div>
+            <div class="skill-class">
+                <div>Machine Learning & AI</div>   
                 <span>TensorFlow</span>
+                <span>Keras</span>
                 <span>PyTorch</span>
                 <span>DepthAI</span>
-                <span>Arduino</span>
+                <span>Roboflow</span>
             </div>
-            <p>A vest eqipped with an object detection model for the visually impaired. Contributed to the training of the model and microcontroller programming.</p>
-            <a href="https://github.com/ellisepagong/DSP-1-2324-C7-ObstacleDetection">
-                <button>
-                    <svg width="15" height="15" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
-                            </g></g></g>
-                        </svg>  
-                    GitHub
-                </button>
-            </a>
-        </div>
-        <div class="project-card">
-            <h2>Companion Mobile<br>Applcation for CV Thesis</h2>
-            <svg height="5" width="75">
-                <line x1="0" y1="0" x2="75" y2="0"/></svg>
-            <h3>University Thesis</h3>
-            <div class = "tech-stack">
-                <span>Java</span>
-                <span>Kotlin</span>
-                <span>Jetpack Compose</span>
+            <div class="skill-class">
+                <div>Tools & Environments</div>    
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>JetBrains</span>
+                <span>VS Code</span>
+                <span>Apache NetBeans</span>    
             </div>
-            <p>My individual contribution to my group thesis. Developed an android application to communicate with the vest to provide alerts to the user.</p>
-            <a href="https://github.com/ellisepagong/DSP-1-2324-C7-MobileApp">
-                <button>
-                    <svg width="15" height="15" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#FFF">
-                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"/>
-                            </g></g></g>
-                        </svg>  
-                    GitHub
-                </button>
-            </a>
-        </div>
-    </div>
-    <div class="section" id="experience-view">
-        <div>
-            <div style="display: grid; grid-template-columns: 130px 130px; align-items: center; justify-content: center; margin-left:10px;">
-                <button id = "professional-button" class="active">Professional</button>
-                <button id = "academic-button">Academic</button>
+            <div class="skill-class">
+                <div>Methodologies & Processes</div>     
+                <span>Agile/Scrum</span>
+                <span>CI/CD</span>
+                <span>SDLC</span>
+                <span>Behavior Driven Development</span>
+                <span>Waterfall</span>               
             </div>
-            <svg height="5" width="150" style="margin:10px 0 30px 0">
-                <line x1="0" y1="0" x2="200" y2="0"/>
-            </svg>
-            <div class="experience-container">
-                <div id="professional-section">
-                    <h2>Voluntary Data Encoder</h2>
-                    <h3><i>Independent Auditor</i> | 2016-Present</h3>
-                    <ul>
-                        <li>Accepted ad-hoc assignments recording and balancing client expenses and income for financial audit and BIR compliance.</li>
-                        <li>Encoded client transactions into accounting software or digitized from physical ledgers, consolidating data into standardized reports.</li>
-                        <li>Coordinated with representatives of long-term clients to establish project and fund accounts, as well as income and expense details.</li>
-                        <li>Optimized workflows to complete one month’s worth of client income and expense data entry and balancing within 2 days.</li>
-                    </ul>
-                    <h2>Software QA Intern</h2>
-                    <h3><i>Asurion Philippines</i> | May-Aug 2024</h3>
-                    <ul>
-                        <li>Scripted automated test cases using Selenium, Cucumber for a customer-facing web application, deployed into the CI/CD pipeline with GitHub Actions.</li>
-                        <li>Performed manual and automated end-to-end tests across 12 client merchants, validating UI behavior, backend databases, and JSON API responses.</li>
-                        <li>Adapted quickly to technical challenges: updated Selenium locators for encrypted iframe fields, implemented JavaScript execution in Selenium, and troubleshot access limitations by querying SQL databases directly.</li>
-                        <li>Reported and tracked issues in Jira, collaborating with developers to verify fixes.</li>
-                        <li>Earned positive performance feedback for independence, resourcefulness, and technical skills.</li>
-                    </ul>
-                </div>
-                <div id="academic-section" >
-                    <h2>BS Computer Engineering</h2>
-                    <h3>De La Salle University - Manila | June 2025</h3>
-                    <p>Association of Computer Engineering Students - AVP Creatives | 2019-2021</p>
-                    <ul>
-                        <li>Founded Laguna chapter, creating a hub for students in the satellite campus.</li>
-                        <li>Designed promotional materials for events and social media campaigns.</li>
-                    </ul> 
-                
-                    <p>DLSU Commission on Elections - Laguna Campus Representative | 2019-2020</p>
-                    <ul>
-                        <li>Facilitated student council elections at the Laguna campus.</li>
-                        <li>Coordinated with main branch for candidate compliance, event logistics, and organization.</li>
-                    </ul> 
-                    <h2>Science, Technology, Engineering and Mathematics Strand</h2>
-                    <h3>Miriam College - Loyola Heights | April 2018</h3>
-                    <p>Varsity Tennis Team | 2017 - 2018</p>
-                        <ul>
-                            <li>Led campaign to establish a tennis club and formed a competitive team for local tournaments.</li>
-                            <li>League of Southern Manila Schools 2016 - Silver Medal.</li>
-                        </ul> 
-            
-                    <p>Computer Club - Secretary | 2016-2017</p>
-                        <ul>
-                            <li>Managed attendance records, organized paperwork, and supported board operations.</li>
-                            <li>Represented the school in Google Web Rangers Program in 2016, reaching top 5 with an online digital literacy campaign.</li>
-                        </ul> 
-                        
-                </div>
+            <div class="skill-class">
+                <div>Collaboration Tools</div>      
+                <span>Microsoft Workspace</span>
+                <span>Notion</span>
+                <span>Atlassian Jira</span>  
             </div>
-        </div>
-    </div>
-    <div class="section" id="skills-view">
-        <div class="skill-class">
-            <div>Programming Languages</div>
-            <span>Python</span>
-            <span>Java</span>
-            <span>C++</span>
-            <span>SQL</span>
-        </div>
-        <div class="skill-class">
-            <div>Quality Assurance</div> 
-            <span>JUnit</span>
-            <span>Selenium</span>
-            <span>Cucumber</span>       
-        </div>
-        <div class="skill-class">
-            <div>Machine Learning & AI</div>   
-            <span>TensorFlow</span>
-            <span>Keras</span>
-            <span>PyTorch</span>
-            <span>DepthAI</span>
-            <span>Roboflow</span>
-        </div>
-        <div class="skill-class">
-            <div>Tools & Environments</div>    
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>JetBrains</span>
-            <span>VS Code</span>
-            <span>Apache NetBeans</span>    
-        </div>
-        <div class="skill-class">
-            <div>Methodologies & Processes</div>     
-            <span>Agile/Scrum</span>
-            <span>CI/CD</span>
-            <span>SDLC</span>
-            <span>Behavior Driven Development</span>
-            <span>Waterfall</span>               
-        </div>
-        <div class="skill-class">
-            <div>Collaboration Tools</div>      
-            <span>Microsoft Workspace</span>
-            <span>Notion</span>
-            <span>Atlassian Jira</span>  
-        </div>
-        <div class="skill-class">
-            <div>Technical Competencies</div>   
-            <span>Project Documentation</span>
-            <span>Code and Environment Troubleshooting</span>
-            <span>Data Entry</span>
-            <span>Tool Adaptability</span>     
-        </div>
-        <span></span>
-        <div class="skill-class">
-            <div>Certifications</div>   
-            <span>EF-SET English - C2 Proficiency</span>
-            <span>AWS Cloud Practitioner (In Progress)</span>
-  
-        </div>
+            <div class="skill-class">
+                <div>Technical Competencies</div>   
+                <span>Project Documentation</span>
+                <span>Code and Environment Troubleshooting</span>
+                <span>Data Entry</span>
+                <span>Tool Adaptability</span>     
+            </div>
+            <span></span>
+            <div class="skill-class">
+                <div>Certifications</div>   
+                <span>EF-SET English - C2 Proficiency</span>
+                <span>AWS Cloud Practitioner (In Progress)</span>
+    
+            </div>
 
-    </div>
-    <div class="section" id="about-view">
-        <p>Hi there, I’m Ellise! I grew up building things: GunPla, miniature models, crochet  and so on. I got hooked on programming through Scratch, making simple games in my school's computer lab. I studied Computer Engineering at De La Salle University, where I excelled in Software Development and Microcontroller subjects.</p>
-        <p>During my QA internship at Asurion Philippines, I quickly picked up Selenium, Cucumber, and GitHub Actions, scripting automated tests for customer-facing sites and earning a stellar performance review. Nowadays, when I’m not working on my projects or taking an online course, I like to enjoy a novel, play some video games or build something in real life.</p>
-     
-            <svg height="3" width="100" style="padding: 10px 10px;">
-                <line x1="0" y1="0" x2="100" y2="0" />
-            </svg>
-        <p>
-            Thank you for your interest! Feel free to <a href="#home-view" style = "color: white">contact me</a> or explore my dev diary below, which includes notes from online courses and personal projects, offering a glimpse into my problem-solving process.
-        </p>
-        <iframe src="https://nightcourt.notion.site/ebd/269f9af81e6180378450df984b688e40" width="100%" height="600" class="notion" allowfullscreen></iframe>
+        </div>
+        <div class="section" id="about-view">
+            <p>Hi there, I’m Ellise! I grew up building things: GunPla, miniature models, crochet  and so on. I got hooked on programming through Scratch, making simple games in my school's computer lab. I studied Computer Engineering at De La Salle University, where I excelled in Software Development and Microcontroller subjects.</p>
+            <p>During my QA internship at Asurion Philippines, I quickly picked up Selenium, Cucumber, and GitHub Actions, scripting automated tests for customer-facing sites and earning a stellar performance review. Nowadays, when I’m not working on my projects or taking an online course, I like to enjoy a novel, play some video games or build something in real life.</p>
+        
+                <svg height="3" width="100" style="padding: 10px 10px;">
+                    <line x1="0" y1="0" x2="100" y2="0" />
+                </svg>
+            <p>
+                Thank you for your interest! Feel free to <a href="#home-view" style = "color: white">contact me</a> or explore my dev diary below, which includes notes from online courses and personal projects, offering a glimpse into my problem-solving process.
+            </p>
+            <iframe src="https://nightcourt.notion.site/ebd/269f9af81e6180378450df984b688e40" width="100%" height="600" class="notion" allowfullscreen></iframe>
+        </div>
     </div>
     <script src="index.js" defer></script>
 </body>

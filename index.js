@@ -1,4 +1,23 @@
 // -- INITIAL STATES & GLOBAL VARIABLES 
+var modal = document.getElementById('mobile-modal');
+var content = document.getElementById("main-content");
+
+
+//checks if browser is on mobile, shows notice if so
+if (window.innerWidth <= 768) {
+    // auto-hide after 3 seconds
+    setTimeout(() => {
+        modal.style.opacity = '0';
+        setTimeout(() =>{
+            modal.classList.add('hidden'); 
+        }, 400);
+        content.classList.remove('hidden');
+    }, 5000); 
+
+}else{
+    content.classList.remove('hidden');
+    modal.classList.add('hidden');
+}
 
 const buttons = document.querySelector('.navbar').getElementsByTagName('button');
 var profSection = document.getElementById('professional-section');
@@ -96,7 +115,7 @@ acadButton.addEventListener("click", ()=>{
 });
 
 // Floating Particles by Aneks on CodePen https://codepen.io/Aneks
-
+// Modified particle sizes and colors
 class Particle {
     parent;
     id;
