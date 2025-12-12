@@ -44,17 +44,20 @@ button:hover{
   transition-duration: 0.1s;
 }
 .navbar{
-
   display: grid;
+  position: fixed;
   grid-template-columns: 120px 120px 120px 120px 120px;
   height: 8vh;
+  top: 0;
+  left: 0; 
+  right: 0; 
   align-items: center;
   justify-content: center;
   gap: 25px;
-  position: sticky;
-  top: 0;
   padding-top: 5px;
   margin-top: 0;
+  margin-inline: auto; 
+  width: fit-content;
   z-index: 2;
 }
 .section{
@@ -185,6 +188,31 @@ a { color: var(--dark-blue); }
   stroke: white;
   transition-duration: 1s;
   translate: 0 3px;
+}
+
+@keyframes bounce{
+  25% {
+     transform: translateY(-5px);
+  }
+  50% {
+     transform: translateY(5px);
+  }
+  75% {
+     transform: translateY(-3px);
+  }
+}
+
+#nav-guide{
+  bottom: 5vh;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content;
+  color: var(--gold);
+  opacity: 60%;
+  font-size: 1.5vh;
+  animation: bounce 1.5s ease-in-out infinite;
 }
 
 /*projects*/
