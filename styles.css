@@ -48,6 +48,7 @@ button:hover{
   position: fixed;
   grid-template-columns: 120px 120px 120px 120px 120px;
   height: 8vh;
+  width: 100%;
   top: 0;
   left: 0; 
   right: 0; 
@@ -57,7 +58,6 @@ button:hover{
   padding-top: 5px;
   margin-top: 0;
   margin-inline: auto; 
-  width: fit-content;
   z-index: 2;
 }
 .section{
@@ -104,7 +104,7 @@ a { color: var(--dark-blue); }
   top: 35%;
   width: 100%;
   text-align: center;
-  font-size: 20px;
+  font-size: 1rem
 }
 
 @keyframes typing {
@@ -121,20 +121,6 @@ a { color: var(--dark-blue); }
 }
 
 
-@keyframes jiggle {
-  0% {transform: rotate(0);}
-  33%   {transform: rotate(10deg);}
-  66%  {transform: rotate(-10deg);}
-  99% {transform: rotate(0);}
-}
-
-#phone-svg{
-  animation-name: jiggle;
-  animation-duration: 1s;
-  animation-iteration-count: 5;
-}
-
-
 /* home */
 #home-container{
   display: flex;
@@ -144,7 +130,7 @@ a { color: var(--dark-blue); }
 }
 #home-container p{
   text-align: right;
-  font-size: 16px;
+  font-size: 1rem;
 }
 #home-view svg{
   stroke: var(--gold);
@@ -203,16 +189,15 @@ a { color: var(--dark-blue); }
 }
 
 #nav-guide{
-  bottom: 5vh;
-  position: absolute; 
-  left: 0; 
-  right: 0; 
-  margin-inline: auto; 
+  display: block;
   width: fit-content;
   color: var(--gold);
   opacity: 60%;
-  font-size: 1.5vh;
+  font-size: 0.75rem;
   animation: bounce 1.5s ease-in-out infinite;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*projects*/
@@ -248,6 +233,7 @@ a { color: var(--dark-blue); }
 .project-card h2{
   margin-top: 30px; 
   margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 .project-card svg{
   padding:0;
@@ -257,11 +243,11 @@ a { color: var(--dark-blue); }
 }
 .project-card h3{
   margin: 3px 0 10px 0;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .project-card p{
   font-family: var(--body-font);
-  font-size: 14px;
+  font-size: 0.85rem;
   text-align: left;
   padding: 10px 50px 0px;
   height: 50px;
@@ -277,7 +263,7 @@ a { color: var(--dark-blue); }
   border: 1px solid white;
   border-radius: 3px;
   padding: 10px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: var(--accent-font);
   min-width: 50px;
   min-height: 15px;
@@ -293,7 +279,7 @@ a { color: var(--dark-blue); }
   height: 30px;
   margin: 30px;
   font-family: var(--accent-font);
-  font-size: 16px;
+  font-size: 1rem;
   background-color: white;
   color: var(--dark-blue);
 }
@@ -313,14 +299,17 @@ a { color: var(--dark-blue); }
 
 /*experience*/
 
-#experience-view{
+ #experience-view{
   background-color: var(--dark-blue-2);
-  padding: 150px 200px 0;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   stroke: var(--gold);
   stroke-width: 1px;
   align-items: center;
   justify-content: center;
 }
+
 .experience-container{
   position: relative;
   text-align: left;
@@ -328,16 +317,16 @@ a { color: var(--dark-blue); }
   justify-content: center;
 }
 .experience-container h2{
-  font-size: 32px;
+  font-size: clamp(1rem, 2rem, none);
   margin: 5px;
 
 }
 .experience-container h3{
-    font-size: 24px;
+  font-size: clamp(0.75rem, 1.5rem, none);
   margin: 5px
 }
 .experience-container p{
-  font-size: 18px;
+  font-size: clamp(0.5rem, 1rem, none);
   text-indent: 1em; 
 }
 .experience-container li{
@@ -367,7 +356,7 @@ a { color: var(--dark-blue); }
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 250px 250px 250px;
   gap:0 25px;
-  padding: 150px 200px 0;
+  padding: 100px 200px 0;
   align-items: center;
   justify-content: center;
 }
@@ -415,7 +404,7 @@ a { color: var(--dark-blue); }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: clamp(0.75rem, 1.2rem, none);
   box-shadow: 
     inset 0 0 15px rgba(255, 217, 0, 0.152),  
     inset 2px 2px 25px rgba(0, 0, 0, 0.638),   
@@ -431,7 +420,7 @@ a { color: var(--dark-blue); }
   padding: 8px 15px;
   margin: 5px;
   font-family: var(--accent-font);
-  font-size: 14px;
+  font-size: clamp(0.5rem, 0.8rem, 15px);
 }
 
 /* about */
@@ -449,7 +438,7 @@ a { color: var(--dark-blue); }
   text-indent: 3em;
   text-align: justify;
   margin: 20px 50px;
-  font-size: 18px;
+  font-size: clamp(0.75rem, 1.2rem, none);
 }
 
 .notion{
@@ -472,4 +461,56 @@ canvas {
     height: 100%;
     z-index: -1;
     pointer-events: none;
+}
+
+/* for reactive UI */
+@media (max-width: 600px) {
+
+  .section{
+  margin: 0 1rem;
+  }
+  
+  #experience-view {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #about-view{
+    padding:10% 0;
+  }
+
+  #about-view p{
+  margin: 20px 0px;
+  }
+
+  .navbar{
+    grid-template-columns: 50px 50px 70px 50px 50px;
+    margin: 0;
+  }
+
+  .navbar button{
+    font-size: 1rem;
+  }
+
+  #projects-view{
+  display: block;
+  padding-left: 0px;
+  }
+
+  #skills-view{
+  display: block;
+  padding: 100px 0 0;
+  margin: 
+  }
+
+  .skill-class{
+    width: 300px;
+    height: 100px;
+    padding: 20px, 20px; 
+    margin: 5vh 0;
+  }
+
+  .skill-class span{
+    padding: 5px 15px;
+    margin: 0;
+  }
 }

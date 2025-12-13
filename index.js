@@ -24,16 +24,27 @@ acadSection.classList.add('hidden');
 
 
 // -- SCROLL BEHAVIOR
-let throttleTimeout = null;
-document.addEventListener('wheel', e => {
-    if (!throttleTimeout) {
-        const dir = e.deltaY > 0 ? 'next' : 'prev';
-        scroll(dir);
-        throttleTimeout = setTimeout(function() {
-            throttleTimeout = null; 
-        }, 500); // Execute at most every 0.5s
-  }
-});
+// removed custom wheel-based paging to allow normal scrolling.
+// added IntersectionObserver to update navbar active state when sections become visible.
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.6
+};
+
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const index = Array.from(sections).indexOf(entry.target);
+            if (index !== -1) {
+                currSection = index;
+                updateNavbar(currSection);
+            }
+        }
+    });
+}, observerOptions);
+
+sections.forEach(s => sectionObserver.observe(s));
 
 // -- NAVIGATION BEHAVIOR
 document.querySelector('.navbar').addEventListener("click", function (event) {
@@ -61,19 +72,22 @@ function scroll(i){
         }
     }
     else{
-        currSection = i;
+        // coerce index to number if a string was passed
+        currSection = Number(i);
+        if (Number.isNaN(currSection)) return;
     }
     updateNavbar(currSection);
-    sections.item(currSection).scrollIntoView();
+    sections.item(currSection).scrollIntoView({ behavior: 'smooth' });
 }
 
 function updateNavbar(section){
-    for (let j =0; j<5; j++){
-        var button = buttons[j]
-        if(currSection == j){
+    for (let j = 0; j < buttons.length; j++){
+        const button = buttons[j];
+        if (!button) continue;
+        if (section === j) {
             button.classList.add('active');
-        }else{
-            button.classList = '';
+        } else {
+            button.classList.remove('active');
         }
     }
 }
