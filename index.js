@@ -58,26 +58,14 @@ document.querySelector('.navbar').addEventListener("click", function (event) {
 });
 
 function scroll(i){
-    if(i=='next'){
-        currSection +=1;
-        if(sections.item(currSection) == null){
-            currSection = 4;
-            return;
-        }
-    }else if(i=='prev'){
-        currSection -=1;
-        if(sections.item(currSection) == null){
-            currSection = 0;
-            return;
-        }
-    }
-    else{
-        // coerce index to number if a string was passed
-        currSection = Number(i);
-        if (Number.isNaN(currSection)) return;
-    }
+    currSection = Number(i);
     updateNavbar(currSection);
-    sections.item(currSection).scrollIntoView({ behavior: 'smooth' });
+    if(currSection == 0){
+        window.scrollTo({top: 0, behavior: 'smooth'
+});
+    }else{
+        sections.item(currSection).scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 function updateNavbar(section){
